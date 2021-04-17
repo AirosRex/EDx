@@ -6,11 +6,11 @@ int main(void)
 {
     int height = get_pos_int();
     int blocks = 1;
-    int empty = height - blocks;
+    
     while (height >0)
     {
         //Empty Space
-        for (int x=empty;x>0;x--)
+        for (int x=height-1;x>0;x--)
             {
              printf(" ");
             }
@@ -32,7 +32,6 @@ int main(void)
 
             printf("\n");
             height--;
-            empty--;
             blocks++;
     }
 }
